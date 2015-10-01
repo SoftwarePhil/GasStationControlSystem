@@ -17,7 +17,7 @@ public void processNextMessage(){
 		mr.getNextMessage().messageAction();
 	} catch (Exception e) {
 		System.out.println(e.getMessage());
-		e.printStackTrace();
+		//e.printStackTrace();
 	}
 }
 }

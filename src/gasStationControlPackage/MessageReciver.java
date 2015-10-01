@@ -18,7 +18,7 @@ public void newMessage(String s){
 }
 
 public String getNextIncomingStringMessage() throws Exception{
-	if(incomingMessageStrings.get(0) == null){
+	if(incomingMessageStrings.size() == 0){
 		throw new Exception("no messages to process"); 
 	}
 	

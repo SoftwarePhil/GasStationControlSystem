@@ -2,9 +2,10 @@ package messagePackage;
 
 public class CreditCardReader extends Message {
 
-public CreditCardReader(String s){
-	swipeCreditCardInfo(s.substring(0,5), Double.parseDouble(s.substring(7, s.length()-1)));
+int lengthOfCardNumber = 6;
 	
+public CreditCardReader(String s){
+	swipeCreditCardInfo(s.substring(0,lengthOfCardNumber).trim(), Double.parseDouble(s.substring(7, s.length()-1)));	
 }
 	
 public void messageAction(){

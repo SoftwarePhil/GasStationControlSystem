@@ -6,7 +6,7 @@ public class MessageGenerator {
 	
 public Message generateMessage(String s) throws Exception{
 	String temp;
-	if(s.contains("CreditCardReader")){
+	if(s.contains("CreditCardReader ")){
 	temp = s.replace("CreditCardReader ", "");
 	return new CreditCardReader(temp);
 	}
